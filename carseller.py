@@ -6,7 +6,7 @@ app=Flask(__name__)
 
 def connectdb():
     global con,cursor
-    con=pymysql.connect(host='localhost', user='root', password='root', database='pymysqldemo01')
+    con=pymysql.connect(host='localhost', user='root', password='', database='project')
     cursor = con.cursor()
 def closedb():
     con.close()
